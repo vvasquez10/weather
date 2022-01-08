@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    background-color: #333333;
+}
+
+.nav {
+    width: 1080px;
+    margin: 0 auto;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 20px;
+}
+
+.city{
+    font-size: 30px;
+    font-weight: bold;
+}
+.temperature{
+    display: flex;
+    align-items: center;
+}
+.body{
+    width: 1080px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyTop{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 20px;
+    margin-top: 25px;
+    justify-content: space-between;
+    border-bottom-style: solid;
+}
+.bodyMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.dayBox{
+    padding-inline: 20px;
+    background-color: lightgray;
+    flex: 1;
+    margin-inline: 20px;
+}
+h2, p{
+    text-align: center;
+    font-weight: bold;
+    margin-block: 10px;
+}
+
+img{
+    height: 170px;
+    width: auto;
+    border-radius: 50%;
+}
+.degrees{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-block: 25px;
+    font-weight: bolder;
+}
+.leftSpan{
+    color: red;
+}
+.rightSpan{
+    color:royalblue;
+}
+.select{
+    margin-left: 10px;
+    height: 25px;
+}
+.bodyButtom{
+    width: 1080px;
+    margin: 0 auto;  
+    position: fixed;   
+    bottom: 10px;
+}
+.cookie{    
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    border-style: solid;
+    background-color: white;
+    margin-inline: 20px;
+    margin-block: 20px;
+      
+}
+.cookieImg{
+    height: 60px;
+    width: auto;
+    padding: 20px;
+}
+.cookieText h2, .cookieText p{
+    text-align:initial;
+    font-weight: bold;
+}
+.buttonContainer{
+    display: flex;
+}
+.cookieButton{
+    height: 28px;
+    width:max-content;
+    font-size:large;
+    padding: 5px 5px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(54, 56, 204);
+    border-color: black;
+    color: white;
+    border-style: solid;
+    box-shadow: 5px 3px rgb(10, 10, 10);    
+}

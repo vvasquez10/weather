@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a onclick="alert('Loading weather report...')" href="#">Trujillo</a></li>
+                <li><a onclick="alert('Loading weather report...')" href="#" class="active">Lima</a></li>
+                <li><a onclick="alert('Loading weather report...')" href="#">Iquitos</a></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="main">
+        <div class="body">
+            <div class="bodyTop">
+                <div class="city">
+                    Chimbote
+                </div>
+                <div class="temperature">
+                    show temperature in
+                    <select onchange="changeTemp()" class="select" id="mySelect">
+                        <option>
+                            F°
+                        </option>
+                        <option>
+                            C°
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="bodyMain">
+                <div class="dayBox">
+                    <h2>Today</h2>
+                    <img src="./img/rain.png" alt="raining picture"/>
+                    <p>some rain</p>
+                    <div class="degrees">
+                        <span class="leftSpan" id="temp1">75<span>°</span></span>
+                        <span class="rightSpan"id="temp2">65<span>°</span></span>
+                    </div>
+                </div>
+                <div class="dayBox">                    
+                    <h2>Tomorrow</h2>
+                    <img src="./img/sun.png" alt="sun picture"/>
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <span class="leftSpan" id="temp3">80<span>°</span></span>
+                        <span class="rightSpan"id="temp4">66<span>°</span></span>
+                    </div>
+                </div>
+                <div class="dayBox">                    
+                    <h2>Friday</h2>
+                    <img src="./img/clouds.png" alt="clouds picture"/>
+                    <p>some clouds</p>
+                    <div class="degrees">
+                        <span class="leftSpan" id="temp5">69<span>°</span></span>
+                        <span class="rightSpan"id="temp6">61<span>°</span></span>
+                    </div>
+                </div>
+                <div class="dayBox">                    
+                    <h2>Saturday</h2>
+                    <img src="./img/sun.png" alt="sun picture"/>
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <span class="leftSpan" id="temp7">78<span>°</span></span>
+                        <span class="rightSpan"id="temp8">70<span>°</span></span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="bodyButtom">
+                <div class="cookie" id="cookie">
+                    <div>
+                        <img class="cookieImg" src="./img/cookie.png" alt="cookie img">
+                    </div>
+                    <div class="cookieText">
+                        <h2>Stop! Cookie Time</h2>
+                        <p>Cookies help us display personalized product recommendations and ensure you have great shopping experience. <a>Read More...</a></p>
+                    </div>
+                    <div class="buttonContainer">
+                        <button onclick="hideCookie()" class="cookieButton">I Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
